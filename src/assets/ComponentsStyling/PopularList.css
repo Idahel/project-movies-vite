@@ -1,0 +1,56 @@
+.popular-page {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .popular-page a {
+    width: 100%;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  @media (min-width: 370px) {
+    .popular-page a {
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 570px) {
+    .popular-page a {
+      width: 33.33%;
+    }
+  }
+  
+  @media (min-width: 820px) {
+    .popular-page a {
+      width: 25%;
+    }
+  }
+  
+  .popular-page a img {
+    width: 100%;
+  }
+  
+  .popular-page .movie-info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.75);
+    display: none;
+    padding: 20px;
+  }
+  
+  .popular-page .movie-info h1 {
+    margin-top: auto;
+    margin-bottom: 0;
+  }
+  
+  .popular-page a:hover .movie-info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+  }

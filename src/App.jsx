@@ -1,3 +1,9 @@
+import AppRoutes from './assets/Components/AppRoutes';
+
 export const App = () => {
-  return <div>Find me in src/app.jsx!</div>;
+  return (
+      <AppRoutes />
+  );
 };
+
+export default App;

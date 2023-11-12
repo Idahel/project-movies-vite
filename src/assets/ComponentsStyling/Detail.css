@@ -1,0 +1,91 @@
+.detail-page {
+    position: relative;
+  }
+  
+  .detail-page .back-button {
+    position: absolute;
+    display: inline-flex;
+    color: #fff;
+    align-items: center;
+    font-weight: bold;
+    text-decoration: none;
+    left: 50px;
+    top: 10px;
+    filter: drop-shadow(2px 3px 4px rgb(0 0 0 / 0.5));
+  }
+  
+  .detail-page .back-button svg {
+    width: 30px;
+    transition: margin-right 0.2s ease-in-out;
+  }
+  
+  .detail-page .back-button:hover svg {
+    margin-right: 5px;
+  }
+  
+  .detail-page .background {
+    min-height: 100vh;
+    display: flex;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  .detail-page img {
+    border: 5px solid #fff;
+    width: 200px;
+  }
+  
+  .detail-page .summary {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+  }
+  
+  .detail-page .details {
+    margin-left: 0;
+  }
+  
+  @media (min-width: 577px) {
+    .detail-page .summary {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      padding: 50px;
+    }
+  
+    .detail-page .details {
+      margin-left: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 15px;
+      color: white;
+    }
+  
+    .detail-page img {
+      width: 250px;
+    }
+  }
+  
+  @media (min-width: 770px) {
+    .detail-page img {
+      width: initial;
+    }
+  }
+  
+  .detail-page .details .title {
+    margin-right: 10px;
+  }
+  
+  .detail-page .details p {
+    max-width: 400px;
+  }
+  
+  .detail-page .rating {
+    color: black;
+    font-weight: 500;
+    background: white;
+    padding: 0 5px;
+    text-shadow: none;
+    display: inline-block;
+  }
+  
